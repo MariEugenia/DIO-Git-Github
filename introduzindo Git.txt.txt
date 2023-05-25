@@ -1,0 +1,31 @@
+Link do Git:https://git-scm.com
+
+Git nada mais é que um sistema de versionamento de código, para o repositório do github.
+
+3 tipos básicos do git responsavel por versionamento do código
+
+-----bloss----
+echo 'conteudo' | git hash-object --stdin (gera um conjunto de caractere)
+echo -e 'blob 9\0conteudo' | openssl sha1 (armazena meta dados, tipo, tamanho do arquivo)
+blod tem o tipo de arquivo \0
+contem meta dados do git 
+
+-----treess----
+(armazena blod diferentes, contei meta dados tbm, blod tem o sha1)
+arvores, aponta para os blod, tem o meta, ela monta a estrutura do arquivo
+
+----commits----
+commit oq vc coloca o nome quando altera o arquivo, possui sha1, aponta por uma arvore, por um parente etc...
+ele ponta pra uma arvore, um autor, um parente, um mensagem, timestamp, tbm possui shal1
+
+Chaves SSH e Tokks
+
+chave SSH é uma forma de conexão entre duas maquinas de segurança, entre sua maquina e o git
+pode ser publica ou privada
+
+Comandos iniciais do Git
+
+git init -> inicia o git
+git status -> verifica se a modificação ou esta salvo o arquivo
+git add . -> adiciona um arquivo
+git commit -> comita o arquivo criado.
